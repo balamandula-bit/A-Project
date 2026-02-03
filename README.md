@@ -1,4 +1,4 @@
-# A-Project
+# Classic Snake Game
 
 ## Classic Snake
 
