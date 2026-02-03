@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classic Snake</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="header">
+        <div>
+          <h1>Classic Snake</h1>
+          <p class="subtitle">Eat the food, grow the snake, avoid the walls.</p>
+        </div>
+        <div class="scoreboard">
+          <span>Score</span>
+          <strong id="score">0</strong>
+        </div>
+      </header>
+
+      <section class="game-panel">
+        <div id="grid" class="grid" aria-label="Snake game board" role="application"></div>
+        <aside class="controls">
+          <div class="control-row">
+            <button id="restart" type="button">Restart</button>
+            <button id="pause" type="button">Pause</button>
+          </div>
+          <div class="control-hint">
+            <p><strong>Controls</strong></p>
+            <p>Arrow keys or W/A/S/D to move.</p>
+            <p>Space or P to pause.</p>
+          </div>
+          <div class="dpad" aria-label="On-screen controls">
+            <button type="button" data-dir="up">▲</button>
+            <div class="dpad-row">
+              <button type="button" data-dir="left">◀</button>
+              <button type="button" data-dir="down">▼</button>
+              <button type="button" data-dir="right">▶</button>
+            </div>
+          </div>
+          <p id="status" class="status">Press restart to play.</p>
+        </aside>
+      </section>
+    </main>
+    <script src="game.js"></script>
+  </body>
+</html>
